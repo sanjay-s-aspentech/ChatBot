@@ -1,0 +1,192 @@
+[
+    {
+        "category": "Process Simulation for Energy",
+        "products": [
+            "AspenHYSYS",
+            "Acid Gas Cleaning",
+            "Aspen HYSYS Crude",
+            "BLOWDOWN Technology",
+            "Relief Sizing",
+            "SulsimSulfur Recovery",
+            "Activated Economics",
+            "Activated Energy Analysis",
+            "Activated Exchanger Design & Rating",
+            "Aspen HYSYS Petroleum RefiningRefinery Reactor Models",
+            "Refinery Reactor Models",
+            "Aspen HYSYS Upstream",
+            "Aspen HYSYS DynamicsActivated Dynamics",
+            "Activated Dynamics",
+            "Aspen Hybrid Models",
+            "Aspen Multi Case",
+            "Aspen Operator Training",
+            "Aspen Flare System Analyzer"
+        ]
+    },
+    {
+        "category": "Process Simulation for Chemicals",
+        "products": [
+            "Aspen Adsorption",
+            "Aspen Batch Process Developer",
+            "Aspen Chromatography",
+            "Aspen Custom Modeler",
+            "Aspen Hybrid Models",
+            "Aspen Multi Case",
+            "Aspen Plus",
+            "Aspen Polymers",
+            "Aspen Properties",
+            "Batch Modeling in Aspen Plus",
+            "Distillation Modeling in Aspen Plus",
+            "Relief Sizing",
+            "Solids Modeling",
+            "Activated Economics",
+            "Activated Energy Analysis",
+            "Activated Exchanger Design & Rating",
+            "Aspen Plus Dynamics",
+            "Aspen Process Manuals",
+            "Aspen Flare System Analyzer"
+        ]
+    },
+    {
+        "category": "Exchanger Design & Rating",
+        "products": [
+            "Aspen Air Cooled Exchanger",
+            "Aspen Fired Heater",
+            "Aspen Plate Exchanger",
+            "Aspen Plate Fin Exchanger",
+            "Aspen Shell & Tube Exchanger",
+            "Aspen Shell & Tube Mechanical",
+            "Aspen Coil Wound Exchanger"
+        ]
+    },
+    {
+        "category": "Concurrent FEED",
+        "products": [
+            "Aspen Capital Cost Estimator",
+            "Aspen In-Plant Cost Estimator",
+            "Aspen Process Economic Analyzer",
+            "Aspen OptiPlant 3D Layout",
+            "Aspen OptiRouter",
+            "Aspen Basic Engineering"
+        ]
+    },
+    {
+        "category": "Subsurface Science & Engineering",
+        "products": [
+            "Aspen Echos",
+            "Aspen EarthStudy 360",
+            "Aspen GeoDepth",
+            "Aspen SeisEarth",
+            "Aspen Geolog",
+            "Aspen RMS",
+            "Aspen SKUA",
+            "Aspen OpsLink",
+            "Aspen Tempest",
+            "Aspen METTE",
+            "Aspen Epos"
+        ]
+    },
+    {
+        "category": "Energy & Utilities Optimization",
+        "products": [
+            "Aspen Energy Analyzer",
+            "AspenTech Strategic Planning for Sustainability Pathways",
+            "Aspen Utilities Planner"
+        ]
+    },
+    {
+        "category": "Operations Support",
+        "products": [
+            "Aspen OnLine",
+            "Aspen Simulation Workbook"
+        ]
+    },
+    {
+        "category": "Advanced Process Control",
+        "products": [
+            "Aspen DMC3",
+            "Aspen Virtual Advisor (AVA) for DMC3",
+            "Aspen DMC3 Builder",
+            "Aspen Inferential Qualities",
+            "Aspen Nonlinear Controller",
+            "Aspen Transition Management",
+            "Aspen Watch Performance Monitor"
+        ]
+    },
+    {
+        "category": "Dynamic Optimization",
+        "products": [
+            "Aspen GDOT"
+        ]
+    },
+    {
+        "category": "Manufacturing Execution Systems",
+        "products": [
+            "Aspen Production Execution Manager",
+            "Aspen Unified Reconciliation and Accounting",
+            "Aspen Operations Reconciliation and Accounting",
+            "Aspen Tank and Operations Manager"
+        ]
+    },
+    {
+        "category": "Petroleum Supply Chain",
+        "products": [
+            "Aspen Unified PIMS",
+            "Aspen Unified Scheduling",
+            "Aspen Unified Multisite",
+            "Aspen Virtual Advisor (AVA) for Unified PIMS",
+            "Aspen Verifyfor Planning",
+            "Aspen PIMS-AO",
+            "Aspen PIMS",
+            "Aspen Assay Management",
+            "Aspen Petroleum Scheduler",
+            "Aspen Refinery Multi-Blend Optimizer",
+            "Aspen Petroleum Supply Chain Planner",
+            "Aspen Fleet Optimizer",
+            "Aspen Fleet Forecasting",
+            "Aspen Collaborative Demand Manager"
+        ]
+    },
+    {
+        "category": "Supply Chain Management",
+        "products": [
+            "aspenONESupply Chain Management",
+            "Aspen Scheduler Explorer",
+            "Aspen Collaborative Demand Manager",
+            "Aspen Supply Chain Planner",
+            "Aspen Plant SchedulerFamily",
+            "Aspen Supply Chain Management Insights"
+        ]
+    },
+    {
+        "category": "Asset Performance Management",
+        "products": [
+            "Aspen Mtell",
+            "Aspen Fidelis",
+            "Aspen ProMV",
+            "Aspen Process Pulse",
+            "Aspen Unscrambler"
+        ]
+    },
+    {
+        "category": "AspenTech DataWorks",
+        "products": [
+            "AspenTech Inmation",
+            "Aspen InfoPlus.21",
+            "Aspen Production Record Manager",
+            "aspenONE Process Explorer"
+        ]
+    },
+    {
+        "category": "Digital Grid Management",
+        "products": [
+            "AspenTech Microgrid Management System",
+            "AspenTech OSI monarch SCADA",
+            "AspenTech OSI Generation Management System",
+            "AspenTech OSI Energy Management System",
+            "AspenTech OSI Advanced Distribution Management System",
+            "AspenTech OSI Distributed Energy Resource Management System",
+            "AspenTech OSI CHRONUS Historian",
+            "AspenTech OSI Continua Pipeline Management"
+        ]
+    }
+]

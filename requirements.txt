@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+streamlit
+ipykernel
+flask
+bs4
+transformers
+torch
+PyPDF2
+nltk
+spacy
+textblob

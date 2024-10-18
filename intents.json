@@ -1,0 +1,74 @@
+{ 
+    "intents": [ 
+        { 
+            "tag": "greeting", 
+            "patterns": ["hello", "hi", "how are you", "hey"], 
+            "responses": ["Hello!", "Hi there!","I am an AI Assisted Chatbot how can i help you!....", "How can I help you?"] 
+        }, 
+        { 
+            "tag": "goodbye", 
+            "patterns": ["bye", "see you", "exit"], 
+            "responses": ["Goodbye!", "See you later!"] 
+        }, 
+        { 
+            "tag": "few_categories", 
+            "patterns": ["few categories"], 
+            "responses": ["Categories: Process Simulation for Energy, Process Simulation for Chemicals"] 
+        }, 
+        { 
+            "tag": "in_product", 
+            "patterns": ["list all the products in Process Simulation for Energy", "list all the products in Process Simulation for Chemicals"], 
+            "responses": ["Here are the products..."] 
+        },
+        {
+            "tag": "specific_product",
+            "patterns": [
+                "Tell me about Aspen HYSYS",
+                "aspen hysys",
+                "what is Aspen HYSYS?",
+                "give me information about Aspen HYSYS",
+                "explain Aspen HYSYS"
+            ],
+            "responses": ["Aspen HYSYS is a process simulation software used for oil and gas processing, including refining and gas processing."]
+        },  
+        { 
+            "tag": "ceo", 
+            "patterns": ["who is the ceo of aspentech", "aspentech ceo"], 
+            "responses": ["Antonio Pietri is the CEO of AspenTech."] 
+        }, 
+        { 
+            "tag": "what_is_aspentech", 
+            "patterns": ["what is aspentech", "aspentech definition"], 
+            "responses": ["AspenTech is a software company that provides process simulation and optimization solutions for various industries."] 
+        }, 
+        {
+            "tag": "help",
+            "patterns": ["help", "how do I use this", "what can you do", "what are your capabilities?", "can you assist me?"],
+            "responses": ["You can ask me questions about AspenTech, its products, and services. I will provide answers to the best of my knowledge."]
+        },
+        {
+            "tag": "about_you",
+            "patterns": ["who are you ", "tell me about you"],
+            "responses": ["I am a Chatbot that answers the questions regarding AspenTech and its products...."]
+        },
+        {
+            "tag": "unknown",
+            "patterns": [
+              "What is this?",
+              "Can you help me?",
+              "I don't understand",
+              "Tell me more"
+            ],
+            "responses": [
+              "I'm not sure how to respond to that. Can you please rephrase?",
+              "Could you clarify your question?",
+              "I'm here to help, but I need more information."
+            ]
+        },
+        { 
+            "tag": "Aspen Products",
+            "patterns": ["list all the products of aspentech", "explain about a product"], 
+            "responses": ["AspenTech offers a range of products including Aspen Plus, Aspen HYSYS and additional products"] 
+        } 
+    ]    
+}
