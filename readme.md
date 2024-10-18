@@ -82,7 +82,7 @@ This JSON file contains structured data about products and their respective cate
          ```
 ## Step-3: Run the chatbot using the command 
         ```
-        python chatbot.py
+        python app.py
         ```
 ## Step-4: Access the chatbot
 Open a web browser and navigate to `http://localhost:5000/` to interact with it ....
