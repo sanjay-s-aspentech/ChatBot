@@ -115,14 +115,18 @@ def get_response():
             else:
                 bot_response = "Sorry, I couldn't find that category."
         else:
-            # Predict intent if no products were found
-            predicted_tag = predict_intent(user_message)
-
             # Retrieve response based on predicted intent
             if predicted_tag in responses:
-                bot_response = random.choice(responses[predicted_tag])
+                                # Check if a URL is associated with this tag
+                url = next((intent.get("url", "") for intent in intents['intents'] if intent['tag'] == predicted_tag), None)
+                if url:
+                    bot_response =  f"Here is the link you requested: <a href='{url}' target='_blank'>{url}</a>"
+                else:
+                    bot_response = random.choice(responses[predicted_tag])
+                # bot_response = random.choice(responses[predicted_tag])
             else:
-                bot_response = "I'm not sure how to respond to that. Can you please rephrase?"
+                # Fallback to unknown tag response for unrecognized inputs
+                bot_response = random.choice(responses['unknown'])
 
     # Store context in session only if predicted_tag is defined
     if predicted_tag is not None:
