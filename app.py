@@ -95,32 +95,37 @@ def get_response():
         if descriptions:
             product_list = "\n• ".join(found_products)  # Format products with bullet points
             descriptions_text = "\n".join(descriptions)
-            bot_response = f"\n• {product_list} is a part of {found_category.capitalize()} category:\n\nDescriptions:\n{descriptions_text}"
+            bot_response = f"{product_list} product is a part of {found_category.capitalize()} category.\n<br>\n{descriptions_text}\n"
         else:
             product_list = "\n• ".join(found_products)  # Format products with bullet points
-            bot_response = f"\n• {product_list} is a part of {found_category.capitalize()} category:\n\nI have no descriptions for these products."
+            bot_response = f"{product_list} product is a part of {found_category.capitalize()} category.\n/<br>\n I have no descriptions for the {product_list} products."
     else:
         # Check for specific queries about categories
         if "how many categories" in user_message or "list all the categories" in user_message:
             num_categories = len(product_data)
-            categories_list = "\n• ".join([product['category'] for product in product_data])  # Format categories with bullet points
-            bot_response = f"There are {num_categories} categories:\n• {categories_list}"
+            #categories_list = "<ul>"+ "\n".join([product['category'] for product in product_data]) + "</ul>" # Format categories with bullet points
+            categories_list = "<ul>"+ "\n".join(f"<li>{product['category']}</li>" for product in product_data) + "</ul>" # Format categories with bullet points
+            bot_response = f"There are {num_categories} categories:\n\n<br>{categories_list}"
         elif "how many products in" in user_message:
             category_name = user_message.split("how many products in")[-1].strip()
             category = next((cat for cat in product_data if cat['category'].lower() == category_name.lower()), None)
             if category:
                 num_products = len(category['products'])
-                products_list = "\n• ".join(category['products'])  # Format products with bullet points
-                bot_response = f"There are {num_products} products in the {category_name} category:\n\n• {products_list}"
+                #products_list = "\n• ".join(category['products'])  # Format products with bullet points
+                products_list = "<ul>" + "\n".join(f"<li>{product}</li>" for product in category['products']) + "</ul>"  # Use bullet points
+                bot_response = f"There are {num_products} products in the {category_name} category:\n\n<br>{products_list}"
             else:
                 bot_response = "Sorry, I couldn't find that category."
         else:
+            # Predict intent if no products were found
+            predicted_tag = predict_intent(user_message)
+
             # Retrieve response based on predicted intent
             if predicted_tag in responses:
                                 # Check if a URL is associated with this tag
                 url = next((intent.get("url", "") for intent in intents['intents'] if intent['tag'] == predicted_tag), None)
                 if url:
-                    bot_response =  f"Here is the link you requested: <a href='{url}' target='_blank'>{url}</a>"
+                    bot_response =  f" {random.choice(responses[predicted_tag])}<a href='{url}' target='_blank'>{url}</a>"
                 else:
                     bot_response = random.choice(responses[predicted_tag])
                 # bot_response = random.choice(responses[predicted_tag])
@@ -145,4 +150,4 @@ def feedback():
     return jsonify({'response': 'Thank you for your feedback!'})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run("0.0.0.0",debug=True)

@@ -2,8 +2,8 @@
     "intents": [ 
         { 
             "tag": "greeting", 
-            "patterns": ["hello", "hi", "how are you", "hey","great"], 
-            "responses": ["Hello!", "Hi there!","I am fine how about you!....", "How can I help you?","That's Great how can i help you!.."] 
+            "patterns": ["hello", "hi", "how are you", "hey"], 
+            "responses": ["Hello!", "Hi there!", "How can I help you?"] 
         },
         {
             "tag": "About",
@@ -19,21 +19,48 @@
             "tag": "link_query",
             "patterns": [
               "Where can I find more information about X?",
-              "Can you give me a link to Y?"
+              "Can you give me a link to Y?",
+              "provide me link to"
             ],
-            "responses": [],
-            "url": "https://www.aspentech.com/en/"
+            "responses": ["Here is the link you requested:\n"],
+            "url": "https://www.aspentech.com/en/products/full-product-listing"
         },
+        {
+            "tag": "license",
+            "patterns": [
+              "How to migrate license from one machine to the other",
+              "migrate license"
+            ],
+            "responses": ["customer will need to submit a new request as the locking information will change \n"],
+            "url": "https://esupport.aspentech.com/S_Article?id=000079631"
+        },
+        {
+            "tag": "packages",
+            "patterns": [
+              "What packages do we sell ",
+              "sell the packages",
+              "list the packages"
+            ],
+            "responses": ["Packages:\n<br>standard<br>Premium<br>Tokens\n"]
+        },
+        {
+            "tag": "release",
+            "patterns": [
+              "When is the next release",
+              "upcoming releases"
+            ],
+            "responses": ["upcoming releases are listed in below links please refer : "],
+            "url": "https://esupport.aspentech.com/apex/s_productlifecyclepolicy <br> https://esupport.aspentech.com/apex/S_ProductLifecycleAnnounce"
+        },  
         { 
             "tag": "cost", 
-            "patterns": ["estimated cost","price","pricing","cost"], 
-            "responses": ["~$$$--- check"],
-            "url": ["https://www.aspentech.com/en/"] 
+            "patterns": ["estimated cost","price","pricing","cost","Questions on price of each price"], 
+            "responses": ["Please send us an email... test@aspentech.com"]
         },
         { 
-            "tag": "price", 
-            "patterns": ["estimated price"], 
-            "responses": ["~$$$"] 
+            "tag": "login", 
+            "patterns": ["I am unable to login to the support site","my password has expired"], 
+            "responses": [" go to <a href= https://support.aspentech.com  target='_blank'>https://support.aspentech.com  </a> | Login button | Cancel | Select option 2, If you have forgotten your password or username click here to request it to be e-mailed to you. this way you can change your password <br>| You will receive an email with a link to restore a new password. "]
         },
         { 
             "tag": "few_categories", 
@@ -66,13 +93,8 @@
             "patterns": [
                 "What is this?",
                 "Can you help me?",
-                "I don't understand",
-                "Tell me more",
                 "I'm confused",
-                "Can you clarify?",
-                "What do you mean?",
-                "I'm lost",
-                "I need more details"
+                "Can you clarify?"
             ],
             "responses": [
                 "I'm not sure how to respond to that. Can you please rephrase?",
